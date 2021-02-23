@@ -4,7 +4,7 @@ import requests
 import sys
 
 _RE_VALID_URL = re.compile(r'(?:(?:https?://(?:www\.)?)?(?:youtube\.com/watch\?v=|youtu\.be/))?(?P<video_id>[a-zA-Z0-9_-]{11})')
-_WAYBACK_URL = 'https://web.archive.org/web/0oe_/http://wayback-fakeurl.archive.org/yt/{video_id}'
+_WAYBACK_URL = 'https://web.archive.org/web/2oe_/http://wayback-fakeurl.archive.org/yt/{video_id}'
 
 def youtube_wayback(video_id, session=None):
     session = session or requests.Session()
